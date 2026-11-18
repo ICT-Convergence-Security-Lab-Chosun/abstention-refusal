@@ -1,0 +1,18 @@
+# Reproduction environment (Python 3.11), pinned to tested versions.
+
+# --- Analysis (geometry, judges' aggregation, number reproducers) ---
+numpy==2.2.6
+scikit-learn==1.8.0
+
+# --- From-scratch pipeline (GPU + model weights) ---
+torch==2.10.0            # CUDA 12.x build; install the wheel matching your CUDA toolkit
+transformers==4.57.6
+accelerate==1.13.0
+safetensors==0.7.0
+datasets==3.6.0
+
+# --- LLM-as-a-judge (OpenAI-compatible endpoint, e.g. gpt-4o-mini) ---
+openai==2.31.0
+
+# --- Optional: layer-sweep diagnostic plot only ---
+matplotlib==3.6.3

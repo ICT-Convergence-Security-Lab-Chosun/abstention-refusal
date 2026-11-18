@@ -1,0 +1,19 @@
+name: abstention-paper
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=2.2.6
+  - scikit-learn=1.8.0
+  - matplotlib=3.6.3
+  - pytorch=2.10.0
+  - pytorch-cuda=12.1
+  - pip:
+      - transformers==4.57.6
+      - accelerate==1.13.0
+      - safetensors==0.7.0
+      - datasets==3.6.0
+      - openai==2.31.0
